@@ -47,6 +47,7 @@ header {
   background-position: top center;
   background-size: cover;
   padding-top: 40px;
+  background-color: #fff;
 }
 
 input {
@@ -91,7 +92,7 @@ h1 {
 }
 .contact li a:hover {
   transform: scale(1.1);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .contact li a svg {
   margin-right: 10px;
@@ -150,8 +151,8 @@ h1 {
   z-index: 1;
   transform: rotate(45deg);
   position: absolute;
-  -webkit-animation: flareAnimation 3s infinite linear;
-          animation: flareAnimation 3s infinite linear;
+  -webkit-animation: flareAnimation 1s infinite linear;
+          animation: flareAnimation 1s infinite linear;
 }
 @-webkit-keyframes movingFlare {
   0% {
@@ -209,17 +210,23 @@ h1 {
 .about__me {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.about__me img {
-  display: flex;
-  max-width: 600px;
-  justify-content: center;
-}
-.about__me p {
   text-align: start;
-  max-width: auto;
+}
+.about__me__photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about__me__photo img {
+  display: flex;
+  max-width: 300px;
+  margin-right: 30px;
+}
+.about__me__photo p {
+  text-align: start;
   line-height: 30px;
+  max-width: 800px;
 }
 
 .parallax > use {
@@ -281,12 +288,16 @@ h2 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+h4 {
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 
 .skills {
-  padding: 100px 0;
-  text-align: center;
+  padding-bottom: 100px;
 }
 .skills__skill {
   display: flex;
@@ -298,7 +309,9 @@ h2 {
   height: 130px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 .skills__skill__block p {
   font-weight: 600;
@@ -306,6 +319,7 @@ h2 {
 
 .work {
   text-align: center;
+  padding-bottom: 100px;
 }
 .work__works {
   display: flex;
@@ -320,15 +334,18 @@ h2 {
   display: inline-block;
   overflow: hidden;
 }
+.work__works__site:hover img {
+  transform: scale(1.1);
+}
+.work__works__site:hover p {
+  text-decoration: underline;
+}
 .work__works__site img {
   transition: 1s;
   display: block;
   max-width: 100%;
   margin-bottom: 20px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.work__works__site img:hover {
-  transform: scale(1.1);
 }
 .work__works__site p {
   margin-bottom: 20px;
@@ -343,28 +360,34 @@ footer {
 .navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navigation a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .git {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 .git svg {
   margin-right: 10px;
 }
 
-@media (max-width: 1440px) {
-  img {
-    max-width: 100%;
+@media (max-width: 768px) {
+  .work__works {
+    justify-content: space-around;
   }
 
-  .about__me img {
-    max-width: 50%;
+  .about__me__photo {
+    flex-direction: column;
+    align-items: start;
   }
-}
-@media (max-width: 768px) {
-  .about__me img {
-    margin-bottom: 40px;
+  .about__me__photo img {
+    margin-bottom: 30px;
+    margin-right: 0px;
   }
 }
 @media (max-width: 576px) {
@@ -379,9 +402,17 @@ footer {
   .contact li {
     margin-bottom: 15px;
   }
+
+  .skills__skill__block {
+    width: 130px;
+  }
 }
 @media (max-width: 420px) {
   h1 {
+    font-size: 50px;
+  }
+
+  h2 {
     font-size: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
