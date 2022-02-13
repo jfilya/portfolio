@@ -382,6 +382,9 @@ footer {
       }
     }
   }
+  .name{
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -390,6 +393,9 @@ footer {
   }
   h2 {
     font-size: 50px;
+  }
+  .name{
+    padding-top: 50px;
   }
 }
 

@@ -406,6 +406,10 @@ footer {
   .skills__skill__block {
     width: 130px;
   }
+
+  .name {
+    padding-top: 100px;
+  }
 }
 @media (max-width: 420px) {
   h1 {
@@ -414,5 +418,9 @@ footer {
 
   h2 {
     font-size: 50px;
+  }
+
+  .name {
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
