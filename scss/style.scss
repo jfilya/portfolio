@@ -44,6 +44,7 @@ header {
   background-size: cover;
   padding-top: 40px;
   background-color: #fff;
+  position: relative;
 }
 
 input {
@@ -60,6 +61,58 @@ button {
   padding: 0 10px;
   margin: 0 auto;
 }
+
+
+.blink, .blink_2, .blink_3, .blink_4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  
+  opacity: 0;
+  
+  background: url('https://hsto.org/files/e77/a7c/af9/e77a7caf9935450fadf788ed0e98e9f1.png');
+  
+  -webkit-animation: stars 5s linear infinite;
+  animation: stars 5s linear infinite;
+}
+
+.blink_2 {
+  background-position: 100px 100px;
+  
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.blink_3 {
+  background-image: url('https://hsto.org/files/72e/5d6/4c5/72e5d64c5b7444aa81987f069417435b.png');
+  background-position: 300px 100px;
+  
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.blink_4 {
+  background-image: url('https://hsto.org/files/72e/5d6/4c5/72e5d64c5b7444aa81987f069417435b.png');
+  background-position: 0 0;
+  
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+
+@-webkit-keyframes stars {
+  0%, 50%, 100% {opacity: 0;}
+  1%, 49% {opacity: 1;}
+}
+
+@keyframes stars {
+  0%, 50%, 100% {opacity: 0;}
+  5%, 45% {opacity: 1;}
+}
+
 h1 {
   font-size: 55px;
   font-weight: 400;
@@ -71,6 +124,7 @@ h1 {
   margin-bottom: 150px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
   li {
     margin-right: 20px;
     &:last-child {
@@ -81,9 +135,6 @@ h1 {
       &:hover {
         transform: scale(1.1);
         transition: 0.3s;
-      }
-      svg {
-        margin-right: 10px;
       }
     }
   }
@@ -116,6 +167,7 @@ h1 {
       margin-bottom: 80px;
       &:after {
         content: "";
+        opacity: 0.86;
         display: block;
         width: 7px;
         height: 200px;
@@ -128,6 +180,7 @@ h1 {
           height: 200px;
           margin-left: 50px;
           background: #fff;
+
           background: linear-gradient(
             to bottom,
             rgba(255, 255, 255, 0.5) 0%,
@@ -306,7 +359,7 @@ h4 {
       width: 100%;
       display: inline-block;
       overflow: hidden;
-
+      margin-bottom: 30px;
       &:hover {
         img {
           transform: scale(1.1);
@@ -391,16 +444,15 @@ footer {
 }
 
 @media (max-width: 576px) {
-
+  .contact{
+    margin-bottom: 60px;
+  }
   .skills {
     &__skill {
       &__block {
         width: 130px;
       }
     }
-  }
-  .name {
-    padding-top: 100px;
   }
 }
 
