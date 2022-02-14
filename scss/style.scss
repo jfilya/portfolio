@@ -68,6 +68,7 @@ h1 {
   color: #fff;
 }
 .contact {
+  margin-bottom: 150px;
   display: flex;
   justify-content: flex-end;
   li {
@@ -89,10 +90,10 @@ h1 {
 }
 
 .name {
-  padding-top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 150px;
   &__left {
     display: flex;
     flex-direction: column;
