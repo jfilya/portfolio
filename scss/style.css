@@ -68,7 +68,7 @@ button {
   margin: 0 auto;
 }
 
-.blink, .blink_2, .blink_3, .blink_4 {
+.blink {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,26 +78,6 @@ button {
   background: url(../img/star1.png);
   -webkit-animation: stars 5s linear infinite;
   animation: stars 5s linear infinite;
-}
-
-.blink_2 {
-  background-position: 100px 100px;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.blink_3 {
-  background-image: url(../img/star2.png);
-  background-position: 300px 100px;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
-.blink_4 {
-  background-image: url(../img/star1.png);
-  background-position: 0 0;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
 }
 
 @-webkit-keyframes stars {
@@ -461,14 +441,14 @@ footer {
   transition: 0.3s;
 }
 
-@media (max-width: 1440px) {
-  .container {
-    max-width: 100%;
-  }
-}
 @media (max-width: 1024px) {
   h2 {
     font-size: 24px;
+  }
+}
+@media (max-width: 960px) {
+  .container {
+    max-width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -492,6 +472,10 @@ footer {
   .name__right img {
     max-width: 90%;
   }
+
+  .skills__skill__block {
+    width: 130px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -507,7 +491,12 @@ footer {
   }
 
   .skills__skill__block {
-    width: 115px;
+    width: 111px;
+  }
+}
+@media (max-width: 550px) {
+  .skills__skill__block {
+    width: 105px;
   }
 }
 @media (max-width: 420px) {
@@ -521,5 +510,19 @@ footer {
 
   .name {
     padding-top: 50px;
+  }
+
+  .skills__skill__block {
+    width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .skills__skill__block {
+    width: 85px;
+  }
+}
+@media (max-width: 374px) {
+  .skills__skill__block {
+    width: 70px;
   }
 }/*# sourceMappingURL=style.css.map */
