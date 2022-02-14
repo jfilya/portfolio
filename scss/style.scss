@@ -73,7 +73,7 @@ button {
   
   opacity: 0;
   
-  background: url('https://hsto.org/files/e77/a7c/af9/e77a7caf9935450fadf788ed0e98e9f1.png');
+  background: url(../img/star1.png);
   
   -webkit-animation: stars 5s linear infinite;
   animation: stars 5s linear infinite;
@@ -87,7 +87,7 @@ button {
 }
 
 .blink_3 {
-  background-image: url('https://hsto.org/files/72e/5d6/4c5/72e5d64c5b7444aa81987f069417435b.png');
+  background-image: url(../img/star2.png);
   background-position: 300px 100px;
   
   -webkit-animation-delay: 3s;
@@ -95,7 +95,7 @@ button {
 }
 
 .blink_4 {
-  background-image: url('https://hsto.org/files/72e/5d6/4c5/72e5d64c5b7444aa81987f069417435b.png');
+  background-image: url(../img/star1.png);
   background-position: 0 0;
   
   -webkit-animation-delay: 5s;
@@ -360,6 +360,7 @@ h4 {
       display: inline-block;
       overflow: hidden;
       margin-bottom: 30px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
       &:hover {
         img {
           transform: scale(1.1);
@@ -373,9 +374,10 @@ h4 {
         display: block;
         max-width: 100%;
         margin-bottom: 20px;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+
       }
       p {
+        padding-left: 16pxf;
         margin-bottom: 20px;
         color: #000;
       }
@@ -413,6 +415,9 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  h2{
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -444,13 +449,19 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .container{
+    max-width: 80%;
+  }
+  h2{
+    font-size: 50px;
+  }
   .contact{
     margin-bottom: 60px;
   }
   .skills {
     &__skill {
       &__block {
-        width: 130px;
+        width: 115px;
       }
     }
   }
@@ -461,7 +472,7 @@ footer {
     font-size: 50px;
   }
   h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .name {
     padding-top: 50px;
