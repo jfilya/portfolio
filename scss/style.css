@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -68,6 +69,55 @@ button {
   margin: 0 auto;
 }
 
+.stars span {
+  position: absolute;
+  width: 4px;
+  /*ширина звезды*/
+  height: 4px;
+  /*высота звезды*/
+  background: #fff;
+  /*цвет звезды*/
+  border-radius: 50%;
+  /*закоугление углов*/
+  left: 70%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px white;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
+}
+.stars span:before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: rotate(-45deg) translateX(0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(-45deg) translateX(0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
 .blink {
   position: absolute;
   top: 0;
@@ -518,6 +568,32 @@ footer {
 @media (max-width: 550px) {
   .skills__skill__block {
     width: 105px;
+  }
+
+  @-webkit-keyframes animate {
+    0% {
+      transform: rotate(-75deg) translateX(0);
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-75deg) translateX(-1000px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(-75deg) translateX(0);
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-75deg) translateX(-1000px);
+      opacity: 0;
+    }
   }
 }
 @media (max-width: 420px) {
