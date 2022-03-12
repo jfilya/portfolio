@@ -3,7 +3,6 @@
 
 var ParticleEngine = (function() {
 	'use strict';
-
 	function ParticleEngine(canvas_id) {
 		// enforces new
 		if (!(this instanceof ParticleEngine)) {
