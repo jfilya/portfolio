@@ -462,7 +462,6 @@ footer {
   .work {
     &__works {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
     }
   }
@@ -503,6 +502,16 @@ footer {
       grid-template-columns: repeat(3, 1fr);
     }
   }
+  .work {
+    &__works {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      &__site{
+        max-width: 90%;
+      }
+    }
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -524,7 +533,6 @@ footer {
   .work {
     &__works {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
     }
   }

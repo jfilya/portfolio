@@ -70,62 +70,62 @@ header {
 
 .x1 {
   -webkit-animation: floatUp 4s infinite linear;
-  animation: floatUp 4s infinite linear;
+          animation: floatUp 4s infinite linear;
   transform: scale(1);
 }
 
 .x2 {
   -webkit-animation: floatUp 7s infinite linear;
-  animation: floatUp 7s infinite linear;
+          animation: floatUp 7s infinite linear;
   transform: scale(1.6);
   left: 15%;
 }
 
 .x3 {
   -webkit-animation: floatUp 2.5s infinite linear;
-  animation: floatUp 2.5s infinite linear;
+          animation: floatUp 2.5s infinite linear;
   transform: scale(0.5);
   left: -15%;
 }
 
 .x4 {
   -webkit-animation: floatUp 4.5s infinite linear;
-  animation: floatUp 4.5s infinite linear;
+          animation: floatUp 4.5s infinite linear;
   transform: scale(1.2);
   left: -34%;
 }
 
 .x5 {
   -webkit-animation: floatUp 8s infinite linear;
-  animation: floatUp 8s infinite linear;
+          animation: floatUp 8s infinite linear;
   transform: scale(2.2);
   left: -57%;
 }
 
 .x6 {
   -webkit-animation: floatUp 3s infinite linear;
-  animation: floatUp 3s infinite linear;
+          animation: floatUp 3s infinite linear;
   transform: scale(0.8);
   left: -81%;
 }
 
 .x7 {
   -webkit-animation: floatUp 5.3s infinite linear;
-  animation: floatUp 5.3s infinite linear;
+          animation: floatUp 5.3s infinite linear;
   transform: scale(3.2);
   left: 37%;
 }
 
 .x8 {
   -webkit-animation: floatUp 4.7s infinite linear;
-  animation: floatUp 4.7s infinite linear;
+          animation: floatUp 4.7s infinite linear;
   transform: scale(1.7);
   left: 62%;
 }
 
 .x9 {
   -webkit-animation: floatUp 4.1s infinite linear;
-  animation: floatUp 4.1s infinite linear;
+          animation: floatUp 4.1s infinite linear;
   transform: scale(0.9);
   left: 85%;
 }
@@ -237,7 +237,7 @@ h1 {
   padding: 20px 50px;
   background-color: transparent;
   border: 1px solid #fff;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 20px;
   font-weight: 800;
   position: relative;
@@ -267,7 +267,7 @@ h1 {
   height: 200px;
   margin-left: 50px;
   background: #fff;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, white 50%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.5) 100%);
   left: -40px;
   top: -100px;
   z-index: 1;
@@ -545,7 +545,6 @@ footer {
 @media (max-width: 960px) {
   .work__works {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
 
@@ -582,6 +581,15 @@ footer {
   .skills__skill {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .work__works {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .work__works__site {
+    max-width: 90%;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -602,7 +610,6 @@ footer {
 
   .work__works {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
 }
