@@ -39,7 +39,7 @@ body {
   position: relative;
   overflow-x: hidden;
   background-color: #fff;
-  color: #091D19;
+  color: #091d19;
 }
 
 header {
@@ -48,7 +48,7 @@ header {
   margin: 0;
   height: 100%;
   font-weight: 100;
-  background: radial-gradient(#39A28F, #091D19);
+  background: radial-gradient(#39a28f, #091d19);
   overflow-y: hidden;
   -webkit-animation: fadeIn 1 1s ease-out;
   animation: fadeIn 1 1s ease-out;
@@ -474,14 +474,11 @@ h4 {
   padding-bottom: 100px;
 }
 .work__works {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   grid-gap: 10px;
 }
 .work__works__site {
-  max-width: 300px;
-  height: 100%;
+  max-width: 100%;
   text-align: start;
   position: relative;
   width: 100%;
@@ -489,26 +486,22 @@ h4 {
   overflow: hidden;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.work__works__site:hover img {
-  transform: scale(1.1);
-}
 .work__works__site:hover p {
   text-decoration: underline;
 }
 .work__works__site img {
-  transition: 1s;
   display: block;
   max-width: 100%;
   margin-bottom: 20px;
 }
 .work__works__site p {
-  padding-left: 16pxf;
+  padding-left: 16px;
   margin-bottom: 20px;
   color: #000;
 }
 
 footer {
-  background: radial-gradient(#39A28F, #091D19);
+  background: radial-gradient(#39a28f, #091d19);
   padding: 60px 0;
 }
 
@@ -534,20 +527,8 @@ footer {
   h2 {
     font-size: 24px;
   }
-
-  .work__works {
-    justify-content: space-around;
-  }
-  .work__works__site {
-    max-width: 290px;
-  }
 }
 @media (max-width: 960px) {
-  .work__works {
-    display: grid;
-    grid-gap: 10px;
-  }
-
   .skills__skill {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
@@ -582,11 +563,6 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .work__works {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  }
   .work__works__site {
     max-width: 90%;
   }
@@ -606,11 +582,6 @@ footer {
 
   .skills__skill__block {
     width: 111px;
-  }
-
-  .work__works {
-    display: grid;
-    grid-gap: 10px;
   }
 }
 @media (max-width: 550px) {
@@ -662,12 +633,6 @@ footer {
 
   .skills__skill__block {
     width: 100px;
-  }
-
-  .work__works {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 15px;
   }
 }
 @media (max-width: 400px) {
