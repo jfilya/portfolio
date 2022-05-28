@@ -333,14 +333,14 @@ h1 {
     }
   }
   &__right {
-    position: relative;
+    position: absolute;
+    right:20%;
     &__circle {
-      animation: moving 5s infinite linear;
-      @keyframes moving {
-        100% {
-          transform: rotate(-360deg);
-        }
-      }
+      background: radial-gradient(circle at center, #fdc830 0, #ad5389, #3c1053 100%);
+      border-radius: 34% 66% 44% 56% / 37% 61% 39% 63%;
+      transition: all 1s ease-out;
+      box-shadow: inset 10px 0 40px #3f2b96;
+      animation: spin 6s ease-in-out infinite both alternate;
     }
     &__photo {
       position: absolute;
@@ -487,6 +487,51 @@ footer {
         transform: scale(1.1);
         transition: 0.3s;
       }
+    }
+  }
+}
+
+
+@keyframes spin {
+  0% {
+   border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    height: 400px;
+    width: 300px;
+  }
+  
+  50% {
+    border-radius: 30% 70% 70% 30% / 50% 70% 30% 50%;
+  }
+
+  
+  100% {
+    border-radius: 68% 20% 42% 58% / 53% 56% 44% 47%;
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .blob {
+    width: 250px;
+    height: 250px;
+  }
+  
+  @keyframes spin {
+    0% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+      height: 300px;
+      width: 250px;
+    }
+    
+    50% {
+      border-radius: 30% 70% 70% 30% / 50% 70% 30% 50%;
+    }
+    
+    100% {
+      border-radius: 68% 20% 42% 58% / 53% 56% 44% 47%;
+      height: 200px;
+      width: 200px;
     }
   }
 }
