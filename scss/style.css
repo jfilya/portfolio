@@ -650,6 +650,14 @@ footer {
   }
 }
 @media (max-width: 550px) {
+  .work__link {
+    top: 70%;
+  }
+  .work__works__site p {
+    font-size: 20px;
+    width: 90%;
+  }
+
   .skills__skill__block {
     width: 105px;
   }

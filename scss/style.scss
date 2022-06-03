@@ -597,6 +597,7 @@ footer {
     &__works {
       &__site {
         max-width: 90%;
+
       }
     }
   }
@@ -620,6 +621,19 @@ footer {
   }
 }
 @media (max-width: 550px) {
+  .work{
+    &__link{
+      top: 70%;
+    }
+    &__works{
+      &__site{
+        p{
+          font-size: 20px;
+          width: 90%;
+        }
+      }
+    }
+  }
   .skills {
     &__skill {
       &__block {
