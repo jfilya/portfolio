@@ -189,7 +189,11 @@ header {
     opacity: 0;
   }
 }
-
+.page{
+  background: url(../img/background.svg);
+  background-size: cover;
+  background-position: center center;
+}
 input {
   outline: none;
 }
@@ -420,14 +424,14 @@ h4 {
   padding-bottom: 100px;
   &__skill {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     &__block {
-      height: 130px;
+      height: 90px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       p {
         font-weight: 600;
       }

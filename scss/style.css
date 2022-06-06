@@ -170,6 +170,12 @@ header {
     opacity: 0;
   }
 }
+.page {
+  background: url(../img/background.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
 input {
   outline: none;
 }
@@ -448,15 +454,15 @@ h4 {
 }
 .skills__skill {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 .skills__skill__block {
-  height: 130px;
+  height: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .skills__skill__block p {
   font-weight: 600;
