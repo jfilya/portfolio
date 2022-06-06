@@ -308,7 +308,6 @@ h1 {
         position: absolute;
         animation: movingFlare 3s ease-in-out 0.05s infinite;
       }
-
       @keyframes movingFlare {
         0% {
           left: -30px;
@@ -325,8 +324,7 @@ h1 {
       }
       &:hover {
         transition: 0.5s;
-        transform: scale(1.1);
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 40px 0 rgb(255 255 255 / 100%);
       }
     }
   }
@@ -439,19 +437,6 @@ h4 {
 .work {
   text-align: center;
   padding-bottom: 100px;
-  &__link{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    padding: 15px 40px;
-    background: radial-gradient(#39a28f, #091d19);
-    color: black;
-    border-radius: 20px;
-    transition:0.5s;
-    color:#fff;
-  }
   &__works {
     justify-items: center;
     grid-gap: 10px;
@@ -468,14 +453,14 @@ h4 {
         content: '';
         width: 0%;
         height: 0%;
-        background: #000;
+        background: radial-gradient(#39a28f, #091d19);
         position: absolute;
         opacity:0;
         transition: 0.5s;
       }
       &:hover {
         &::before{
-          opacity:.8;
+          opacity:.9;
           height: 100%;
           width: 100%;
         }
@@ -483,7 +468,6 @@ h4 {
           z-index: 5;
         }
         p {
-          text-decoration: underline;
           opacity:1;
         }
       }
@@ -498,10 +482,28 @@ h4 {
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color:#39a28f;
+        color:#ffffff;
         font-size: 30px;
         text-align: center;
       }
+    }
+  }
+  &__link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 20px 50px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    &:hover {
+      transition: 0.5s;
+      box-shadow: 0px 0px 40px 0 rgb(255 255 255 / 100%);
     }
   }
 }
