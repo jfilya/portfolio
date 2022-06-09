@@ -381,9 +381,9 @@ h1 {
   margin-bottom: 60px;
 }
 .about__me p {
-  text-align: start;
   line-height: 30px;
   max-width: 100%;
+  text-align: justify;
 }
 
 .waves {
