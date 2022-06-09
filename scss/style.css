@@ -150,6 +150,7 @@ header {
     opacity: 0;
   }
 }
+
 @keyframes floatUp {
   0% {
     top: 100vh;
@@ -239,7 +240,7 @@ h1 {
   margin-bottom: 60px;
   color: #fff;
 }
-.name__left__btn {
+.name__btn {
   padding: 20px 50px;
   background-color: transparent;
   border: 1px solid #fff;
@@ -250,7 +251,7 @@ h1 {
   overflow: hidden;
   margin-bottom: 80px;
 }
-.name__left__btn:after {
+.name__btn:after {
   content: "";
   opacity: 0.86;
   display: block;
@@ -266,7 +267,7 @@ h1 {
   -webkit-animation: movingFlare 3s ease-in-out 0.05s infinite;
           animation: movingFlare 3s ease-in-out 0.05s infinite;
 }
-.name__left__btn:after :after {
+.name__btn:after :after {
   content: "";
   display: block;
   width: 20px;
@@ -324,7 +325,7 @@ h1 {
     margin-left: 80px;
   }
 }
-.name__left__btn:hover {
+.name__btn:hover {
   transition: 0.5s;
   box-shadow: 0px 0px 40px 0 rgb(255, 255, 255);
 }
@@ -335,7 +336,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-.name__right__circle {
+.name__circle {
   background: radial-gradient(#695aed, #b347d6);
   border-radius: 34% 66% 44% 56%/37% 61% 39% 63%;
   transition: all 1s ease-out;
@@ -343,7 +344,7 @@ h1 {
   -webkit-animation: spin 6s ease-in-out infinite both alternate;
           animation: spin 6s ease-in-out infinite both alternate;
 }
-.name__right__photo {
+.name__photo {
   position: absolute;
   max-width: 360px;
   transform-origin: 50% 50%;
@@ -457,14 +458,14 @@ h4 {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
-.skills__skill__block {
+.skills__block {
   height: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.skills__skill__block p {
+.skills__block p {
   font-weight: 600;
 }
 
@@ -476,7 +477,7 @@ h4 {
   justify-items: center;
   grid-gap: 10px;
 }
-.work__works__site {
+.work__site {
   max-width: 100%;
   text-align: start;
   position: relative;
@@ -486,7 +487,7 @@ h4 {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.work__works__site::before {
+.work__site::before {
   content: "";
   width: 0%;
   height: 0%;
@@ -495,22 +496,22 @@ h4 {
   opacity: 0;
   transition: 0.5s;
 }
-.work__works__site:hover::before {
+.work__site:hover::before {
   opacity: 0.9;
   height: 100%;
   width: 100%;
 }
-.work__works__site:hover .work__link {
+.work__site:hover .work__link {
   z-index: 5;
 }
-.work__works__site:hover p {
+.work__site:hover p {
   opacity: 1;
 }
-.work__works__site img {
+.work__site img {
   display: block;
   max-width: 100%;
 }
-.work__works__site p {
+.work__site p {
   transition: 0.5s;
   position: absolute;
   opacity: 0;
@@ -604,11 +605,8 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
   }
-  .skills__skill__block {
+  .skills__block {
     width: 130px;
-  }
-  .skills__skill__block1 {
-    margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -622,22 +620,20 @@ footer {
   }
   .name__right {
     width: 100%;
-  }
-  .name__left p {
-    font-size: 20px;
-  }
-  .name__right {
     margin-bottom: 30px;
   }
   .name__right img {
     max-width: 90%;
+  }
+  .name__left p {
+    font-size: 20px;
   }
 
   .skills__skill {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .work__works__site {
+  .work__site {
     max-width: 90%;
   }
 }
@@ -654,7 +650,7 @@ footer {
     margin-bottom: 60px;
   }
 
-  .skills__skill__block {
+  .skills__block {
     width: 111px;
   }
 }
@@ -662,12 +658,12 @@ footer {
   .work__link {
     top: 70%;
   }
-  .work__works__site p {
+  .work__site p {
     font-size: 20px;
     width: 90%;
   }
 
-  .skills__skill__block {
+  .skills__block {
     width: 105px;
   }
 
@@ -709,12 +705,12 @@ footer {
     width: 80%;
   }
 
-  .skills__skill__block {
+  .skills__block {
     width: 100px;
   }
 }
 @media (max-width: 400px) {
-  .skills__skill__block {
+  .skills__block {
     width: 85px;
   }
 }
