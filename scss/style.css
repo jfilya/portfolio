@@ -460,10 +460,13 @@ h4 {
 }
 .skills__block {
   height: 90px;
+  width: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+.skills__block svg {
+  margin-right: 15px;
 }
 .skills__block p {
   font-weight: 600;
