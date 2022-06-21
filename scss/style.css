@@ -646,6 +646,10 @@ footer {
   .work__site {
     max-width: 90%;
   }
+  .work__link span {
+    top: 70%;
+    padding: 10px 30px;
+  }
 
   .skills__skill {
     display: flex;
@@ -675,9 +679,6 @@ footer {
   }
 }
 @media (max-width: 550px) {
-  .work__link {
-    top: 70%;
-  }
   .work__site p {
     font-size: 20px;
     width: 90%;
@@ -739,6 +740,10 @@ footer {
 
   h4 {
     text-align: center;
+  }
+
+  .work__site p {
+    font-size: 16px;
   }
 }
 @media (max-width: 375px) {
