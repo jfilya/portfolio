@@ -373,7 +373,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    svg{
+    svg {
       margin-right: 15px;
     }
     p {
@@ -436,21 +436,27 @@ h4 {
     }
   }
   &__link {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    padding: 20px 50px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    font-weight: 800;
-    overflow: hidden;
-    &:hover {
-      transition: 0.5s;
-      box-shadow: 0px 0px 40px 0 rgb(255 255 255 / 100%);
+    top: 0;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      padding: 20px 50px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+      font-weight: 800;
+      overflow: hidden;
+      &:hover {
+        transition: 0.5s;
+        box-shadow: 0px 0px 40px 0 rgb(255 255 255 / 100%);
+      }
     }
   }
 }
@@ -504,7 +510,7 @@ footer {
     max-width: 90%;
   }
   .skills {
-    &__block{
+    &__block {
       width: 100%;
       justify-content: center;
     }
@@ -522,7 +528,7 @@ footer {
     flex-direction: column-reverse;
     &__right {
       width: 100%;
-      margin-bottom: 30px;     
+      margin-bottom: 30px;
       img {
         max-width: 90%;
       }
@@ -534,37 +540,35 @@ footer {
     }
   }
   .work {
-      &__site {
-        max-width: 90%;
-      }
+    &__site {
+      max-width: 90%;
+    }
   }
-  .skills{
-    &__skill{
+  .skills {
+    &__skill {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
     }
-    &__block{
+    &__block {
       justify-content: start;
       height: 70px;
       width: 150px;
-      &:nth-child(8){
+      &:nth-child(8) {
         order: 1;
       }
     }
   }
 }
 @media (max-width: 576px) {
-
   h2 {
     font-size: 50px;
   }
   .contact {
     margin-bottom: 60px;
   }
-  .skills{
-    &__block{
+  .skills {
+    &__block {
       width: 130px;
     }
   }
@@ -574,12 +578,12 @@ footer {
     &__link {
       top: 70%;
     }
-      &__site {
-        p {
-          font-size: 20px;
-          width: 90%;
-        }
+    &__site {
+      p {
+        font-size: 20px;
+        width: 90%;
       }
+    }
   }
   @keyframes animate {
     0% {
@@ -606,13 +610,13 @@ footer {
       }
     }
   }
-  .skills{
+  .skills {
     padding-bottom: 50px;
   }
 }
 @media (max-width: 400px) {
-  .skills{
-    &__skill{
+  .skills {
+    &__skill {
       display: flex;
       flex-direction: column;
       width: 130px;
@@ -623,10 +627,9 @@ footer {
       height: 50px;
     }
   }
-  h4{
+  h4 {
     text-align: center;
   }
-
 }
 @media (max-width: 375px) {
   .name {
