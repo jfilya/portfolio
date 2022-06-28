@@ -210,42 +210,6 @@ h1 {
       height: 200px;
       margin-left: 50px;
       background: #fff;
-      :after {
-        content: "";
-        display: block;
-        width: 20px;
-        height: 200px;
-        margin-left: 50px;
-        background: #fff;
-
-        background: linear-gradient(
-          to bottom,
-          rgba(255, 255, 255, 0.5) 0%,
-          rgba(255, 255, 255, 1) 50%,
-          rgba(255, 255, 255, 0.5) 100%
-        );
-        left: -40px;
-        top: -100px;
-        z-index: 1;
-        transform: rotate(45deg);
-        position: absolute;
-        animation: flareAnimation 1s infinite linear;
-      }
-
-      @keyframes movingFlare {
-        0% {
-          left: -10px;
-          margin-left: 0px;
-        }
-        30% {
-          left: 110%;
-          margin-left: 80px;
-        }
-        100% {
-          left: 110%;
-          margin-left: 80px;
-        }
-      }
       left: -20px;
       top: -100px;
       z-index: 1;
@@ -586,18 +550,6 @@ footer {
         font-size: 20px;
         width: 90%;
       }
-    }
-  }
-  @keyframes animate {
-    0% {
-      transform: rotate(-75deg) translateX(0);
-    }
-    70% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(-75deg) translateX(-1000px);
-      opacity: 0;
     }
   }
 }
